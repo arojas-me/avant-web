@@ -59,4 +59,13 @@
     padding: 10px;
     align-items: center;
     border-radius: 12px;
+    cursor: pointer;
+    transition: 0.5s;
 }
+
+
+.instagram:hover, .linkedin:hover {
+    background-color: var(--primary-400);
+}
+
+

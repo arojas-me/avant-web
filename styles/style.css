@@ -97,6 +97,12 @@ ul li{
     font-size: 12px;
     line-height: 32px;
     list-style-type: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+ul li:hover {
+    color: var(--primary-400)
 }
 
 .encabezado {
