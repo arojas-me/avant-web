@@ -1,0 +1,210 @@
+@import url('../styles/variables.css');
+
+
+#features {
+display: flex;
+padding: 40px 120px 0px 120px;
+flex-direction: column;
+align-items: flex-start;
+gap: 42px;
+align-self: stretch;
+}
+
+.tittle-features {
+    align-self: stretch;
+    color: #FFF;
+    text-align: center;
+}
+
+.tittle-features-color {
+    background: linear-gradient(90deg, var(--primary-400) 0%, var(--primary-100) 73.56%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.feature-sub {
+    align-self: stretch;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.grid-container {
+    margin-bottom: 80px;
+    height: 100%;
+    display: grid;
+    row-gap: 24px;
+    column-gap: 24px;
+    align-self: stretch;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.card-title {
+    font-family: Graphie;
+    color: #FFF;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+    #item-1 {
+        background: url(../public/images/item-1.png);
+        background-size: 130%;
+        background-position:auto;
+        background-repeat: no-repeat;
+        display: flex;
+        padding: 24px;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 18px;
+        flex: 1 0 0;
+        align-self: stretch;
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 1;
+        border-radius: 28px;
+    }
+
+#item-2 {
+    background: 
+   radial-gradient(100% 88% at -5% 20%, var(--primary-400) 0%, var(--primary-900) 170%);
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 4;
+    border-radius: 28px;
+}
+
+.card-content-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.grid-container-card{
+    height: 100%;
+    display: grid;
+    padding: 24px;
+    align-self: auto;
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+}
+
+.image-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 108%;
+    align-items: flex-end;
+}
+
+#item-3 {
+   background: radial-gradient(222.77% 87.39% at -0.82% 3.11%, var(--main-primary-primary-700, rgba(0, 128, 74, 0.40)) 0%, var(--main-primary-primary-900, rgba(0, 51, 30, 0.40)) 100%), conic-gradient(from 196deg at 101.64% -0.11%, var(--main-text-text-900, #121212) 0.5700076790526509deg, var(--main-primary-primary-900, #00331E) 100.25378465652466deg, var(--main-text-text-900, #121212) 188.94518852233887deg);
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 2;
+    border-radius: 28px;
+}
+
+#item-4 {
+    background-image: radial-gradient(80% 95% at 82% 120%, var(--primary-300) 0%, rgba(18, 18, 18, 0.00));
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: grid;
+    padding: 24px;
+    gap: 18px;
+    flex: 1 0 0;
+    align-self: stretch;
+    grid-row: 2 / span 1;
+    grid-column: 3 / span 3;
+    border-radius: 28px;
+}
+
+.grid-container-card-2{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.image-card-2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 135%;
+    align-items: flex-end;
+}
+
+
+
+/*responsive*/
+
+@media (max-width: 768px) {
+  #features {
+    padding: 40px 24px 0px 24px; 
+  }
+
+  .tittle-features {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+}
+
+.feature-sub {
+    margin-top: 8px;
+    font-size: 1rem;
+    text-align: center;
+}
+  
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  #item-1,
+  #item-2,
+  #item-3,
+  #item-4 {
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+  }
+
+  #item-1 {
+    height: 100%;
+  }
+
+  .p-small-r {
+    font-size: 1rem;
+    text-align: start;
+  }
+
+  .grid-container-card {
+    grid-template-columns: 1fr;
+    padding: 12;
+  }
+
+  .image-card {
+    height: auto;
+    justify-content: center;
+    height: 108.5%;
+  }
+
+  .image-card-2 {
+    height: auto;
+    height: 115.5%;
+  }
+
+  .card-content-text,
+  .card-content-text-2 {
+    gap: 12px;
+  }
+
+  .grid-container-card-2 {
+    grid-template-columns: 1fr;
+  }
+}
