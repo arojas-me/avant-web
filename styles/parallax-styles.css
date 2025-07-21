@@ -1,0 +1,155 @@
+
+@import url('../styles/variables.css');
+
+
+.parallax-banner{
+    position: relative;
+    display: grid;
+    height: 480px;
+    overflow: hidden;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.00) 33.84%, #EBFFF7 77.2%),
+                url('../public/images/photoparallax.jpg');
+    background-size: cover, no-repeat;
+    background-position: center center;
+}
+
+
+
+.parallax-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 1;
+}
+
+
+.grid-parallax {
+    display: grid;
+    padding: 40px 120px 40px 120px;
+    flex: 1 0 0;
+    align-self: stretch;
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    z-index: 2;
+}
+
+.data-parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    flex: 1 0 0;
+    align-self: stretch;
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    z-index: 2;
+}
+
+.text-parallax {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+   
+}
+
+.principal-title-dark {
+    color: var(--text-900);
+    font-family: Graphie;
+    font-size: 3.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4.375rem;
+}
+
+
+.principal-title-dark-color {
+    background: linear-gradient(90deg, var(--main-primary-primary-900, #00331E) 0%, var(--main-primary-primary-400, #03FF94) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Graphie;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 68px;
+}
+
+#download {
+    display: flex;
+    padding: 0px 120px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 42px;
+    align-self: stretch;
+}
+
+.download-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.download-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+}
+
+
+
+/*Resonsive*/
+
+@media (max-width: 768px) {
+
+    .grid-parallax {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 24px;
+    text-align: left;
+  }
+
+  .principal-title-dark,
+  .principal-title-dark-color {
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .data-parallax {
+    justify-items: center;
+    gap: 24px;
+  }
+
+  .text-parallax {
+    align-items: center;
+    gap: 16px;
+  }
+
+
+  .parallax-banner {
+    background-attachment: scroll;
+    height: auto;
+    padding: 60px 0;
+  }
+
+  #download {
+    padding: 60px 24px;
+    text-align: center;
+  }
+
+ .download-text {
+    align-items: center;
+  }
+
+}
