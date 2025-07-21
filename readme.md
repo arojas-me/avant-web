@@ -44,6 +44,7 @@
 
 - Asegúrate de tener conexión a internet dado que las animaciones de Spline están embebidas desde una URL externa.
 - Si no ves la animación correctamente, prueba actualizar el navegador.
+- El Repositorio estara publico durante un tiempo limitado.
 
 
 Diseño y Desarollo por 
