@@ -2,14 +2,14 @@
 
 @font-face {
     font-family: "graphie";
-    src: url(fonts/GraphieRegular.otf);
+    src: url(/fonts/GraphieRegular.otf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "graphie";
-    src: url(fonts/Graphie-Bold.otf);
+    src: url(/fonts/Graphie-Bold.otf);
     font-weight: bold;
     font-style: bold;
 }
